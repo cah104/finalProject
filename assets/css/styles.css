@@ -1,0 +1,158 @@
+html,body{
+      height: 100%;
+    }
+ 
+ h2{
+ 	font-size: 20px;
+ }
+
+ h1{
+ 	color: white;
+	position: center;
+	font-size: 60px;
+ }
+
+.container{
+	display: grid;
+	grid-gap: 30px;
+	background-color: #ff6666;
+
+}
+
+
+	.topSection{
+	
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+	grid-gap: 20px;
+	background-color: #262626;
+	height: auto;
+	width: auto;
+	padding: 20px;
+}
+
+
+/*.pageLogo, .motto{
+  grid-column: 1;
+  grid-row: 1;
+  }
+*/
+.pageLogo{
+	background-image: url("../images/index/logo.jpg");
+	background-size: contain;
+	width: auto;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	}
+
+.motto{
+	
+	margin: auto;
+	font-size: 25px;
+	width: auto;
+	
+	
+}	
+.menu{
+
+	
+	display: grid;
+	grid-template-columns: auto;
+	width: auto;
+	margin: auto;
+
+}
+
+.menu-list{
+
+	font-size: 40px;
+	
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 20px;
+	width: auto;
+}
+
+.mobileText{
+	text-align: center;
+	color: white;
+}
+
+.gallery{
+  
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	padding: 50px;
+}
+
+.gallery img {
+    height: 100%;
+}
+
+.gallery a {
+    width: 240px;
+    height: 180px;
+  
+    margin: 4px 6px;
+   
+}
+header{
+	
+	color: white;
+	position: center;
+	font-size: 60px;
+}
+
+.intro{
+	padding: 20px;
+	color: white;
+	font-size: 30px;
+}
+
+p, .list{
+	color: white;
+
+}
+
+.about{
+	margin: 30px;
+	
+	
+	width: auto;
+}
+
+
+
+	/* tablet sized devices */
+	
+
+	@media only screen and (min-width: 500px) {
+		
+	
+		.topSection{
+			grid-template-columns: 306px auto;
+			margin: 20px;
+			/*background-color: #005595;*/
+
+		}
+		.menu-list{
+			display: block;
+		}
+
+
+	}
+
+	/* MEDIA QUERIES desktop sized devices */ 
+	@media only screen and (min-width: 768px) {
+
+		.information{
+			
+			grid-template-columns:  259px auto;
+
+		}
+	
+	
+}
